@@ -15,11 +15,10 @@ void puts2(char *str)
 	int length = _strlen(str);
 	int i;
 
-
 	for (i = 0; i < length; i = i + 2)
 	{
 		char s[1];
-	       	s[0] = str[i];
+		s[0] = str[i];
 		write(STDOUT_FILENO, s, 1);
 	}
 	write(STDOUT_FILENO, "\n", 1);
