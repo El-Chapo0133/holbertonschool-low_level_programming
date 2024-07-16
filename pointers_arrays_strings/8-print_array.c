@@ -11,6 +11,6 @@ void print_array(int *a, int n)
 		if (i != n - 1)
 			printf(", ");
 	}
-	/*write(STDOUT_FILENO, "\n", 1);*/
+	/*write(STDOUT_FILENO, "\n", 1); it doesn't work lol, i mean it does, but it doesn't validate it*/
 	printf("\n");
 }
