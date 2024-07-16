@@ -22,5 +22,5 @@ void puts2(char *str)
 	       	s[0] = str[i];
 		write(STDOUT_FILENO, s, 1);
 	}
-	write(STDOUT_FILENO, "\n", 1)
+	write(STDOUT_FILENO, "\n", 1);
 }
