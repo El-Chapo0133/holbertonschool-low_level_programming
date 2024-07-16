@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 int _strlen(char *s)
 {
@@ -29,5 +30,5 @@ void rev_string(char *str)
 }
 void print_rev(char *s)
 {
-	_puts(rev_string(str));
+	_puts(rev_string(s));
 }
