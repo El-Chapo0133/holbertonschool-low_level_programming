@@ -17,7 +17,6 @@ int _atoi(char *s)
 	int amount_of_minus = 0;
 	int i;
 	int is_recording = 0;
-	int next_char_int;
 	int try_char_as_int;
 
 
