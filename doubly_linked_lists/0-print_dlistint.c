@@ -10,7 +10,13 @@ typedef struct dlistint_s
 
 size_t print_dlistint(const dlistint_t *h)
 {
+	size_t count = 0;
 	dlistint_t *ptr;
-	for (ptr = h; ptr != NULL; ptr = ptr-next)
+	for (ptr = h; ptr != NULL; ptr = ptr->next)
+	{
+		count = count + 1;
 		printf("%d", ptr->n);
+	}
+
+	return count;
 }
