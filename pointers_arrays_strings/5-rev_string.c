@@ -9,6 +9,7 @@ int _strlen(char *s)
 	}
 	return (i);
 }
+
 void rev_string(char *str)
 {
 	int length = _strlen(str);
