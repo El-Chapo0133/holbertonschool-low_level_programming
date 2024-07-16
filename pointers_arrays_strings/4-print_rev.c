@@ -31,6 +31,11 @@ void _puts(char *str)
 }
 void print_rev(char *s)
 {
-	/*rev_string(s);*/
-	_puts(s);
+	int length = _strlen(s);
+
+	for (i = length - 1; i >= 0; i--)
+	{
+		write(STDOUT_FILENO, s[i], 1);
+	}
+	write(STDOUT_FILENO, "\n", 1);
 }
