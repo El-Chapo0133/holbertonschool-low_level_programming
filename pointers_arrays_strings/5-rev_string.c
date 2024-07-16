@@ -12,7 +12,7 @@ int _strlen(char *s)
 void rev_string(char *str)
 {
 	int length = _strlen(str);
-	char *result[length];
+	char result[length];
 	int i;
 
 	for (i = length - 1; i >= 0; i--)
