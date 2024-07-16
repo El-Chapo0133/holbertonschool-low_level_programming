@@ -13,15 +13,13 @@ int _strlen(char *s)
 void print_rev(char *s)
 {	
 	int length = _strlen(s);
-	int i, j;
+	int i;
 
-	for (i = 0, j = length - 1; i < j; i++, j--)
+	for (i = length - 1; i >= 0; i--)
 	{
-		char c = s[i];
+		char c[1];
 
-		s[i] = s[j];
-		s[j] = c;
+		c[0] = s[i];
+		write(STDOUT_FILENO, c, 1);
 	}
-
-	write(STDOUT_FILENO, s, _strlen(s));
 }
