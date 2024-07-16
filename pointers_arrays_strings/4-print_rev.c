@@ -15,7 +15,6 @@ void print_rev(char *s)
 	int length = _strlen(s);
 	int i, j;
 
-	write(STDOUT_FILENO, s, _strlen(s));
 	for (i = 0, j = length - 1; i < j; i++, j--)
 	{
 		char c = s[i];
