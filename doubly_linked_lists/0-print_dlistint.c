@@ -11,6 +11,6 @@ typedef struct dlistint_s
 size_t print_dlistint(const dlistint_t *h)
 {
 	dlistint_t *ptr;
-	for (pts = h; pts != NULL; pts = pts-next)
+	for (ptr = h; ptr != NULL; ptr = ptr-next)
 		printf("%d", ptr->n);
 }
