@@ -18,6 +18,7 @@ void puts2(char *str)
 
 	for (i = 0; i < length; i = i + 2)
 	{
-		write(STDOUT_FILENO, str[i], 1);
+		char* s = str[i];
+		write(STDOUT_FILENO, s, 1);
 	}
 }
