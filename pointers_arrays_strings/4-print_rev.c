@@ -21,7 +21,9 @@ void print_rev(char *s)
 
 		write(STDOUT_FILENO, "yo", 2);
 		s[i] = s[j];
+		write(STDOUT_FILENO, "yo", 2);
 		s[j] = c;
+		write(STDOUT_FILENO, "yo", 2);
 	}
 
 	write(STDOUT_FILENO, s, _strlen(s));
