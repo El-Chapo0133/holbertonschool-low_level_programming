@@ -20,5 +20,5 @@ void rev_string(char *str)
 		result[i] = str[length - i];
 	}
 
-	str = result;
+	*str = *result;
 }
