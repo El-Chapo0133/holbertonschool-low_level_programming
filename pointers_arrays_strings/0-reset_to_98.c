@@ -4,7 +4,6 @@
  * This is a short description
  */
 
-
 /**
  * This is a function description for people who can't read
  * It comments things people can read
