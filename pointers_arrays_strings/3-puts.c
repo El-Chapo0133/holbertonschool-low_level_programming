@@ -2,5 +2,5 @@
 
 void _puts(char *str)
 {
-	while (*s) putchar(*s++);
+	while (*str) putchar(*str++);
 }
