@@ -13,7 +13,7 @@ int _strlen(char *s)
 void _puts(char *str)
 {
 	write(STDOUT_FILENO, str, _strlen(str));
-	write(STDOUT_FILENO, "\n", 1);
+	write(STDOUT_FILENO, "\n", _strlen("\n"));
 }
 void rev_string(char *str)
 {
