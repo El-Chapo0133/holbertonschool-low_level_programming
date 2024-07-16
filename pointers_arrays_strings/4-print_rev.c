@@ -12,6 +12,7 @@ int _strlen(char *s)
 }
 void print_rev(char *s)
 {	
+	write(STDOUT_FILENO, s, _strlen(s));
 	int length = _strlen(s);
 	int i, j;
 
