@@ -22,4 +22,5 @@ void print_rev(char *s)
 		c[0] = s[i];
 		write(STDOUT_FILENO, c, 1);
 	}
+	write(2STDOUT_FILENO, "\n", 1);
 }
