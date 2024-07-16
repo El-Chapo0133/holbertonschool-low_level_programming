@@ -12,6 +12,7 @@ int _strlen(char *s)
 }
 void _puts(char *str)
 {
+	rev_string(str);
 	write(STDOUT_FILENO, str, _strlen(str));
 	write(STDOUT_FILENO, "\n", 1);
 }
@@ -30,6 +31,6 @@ void rev_string(char *str)
 }
 void print_rev(char *s)
 {
-	rev_string(*s);
+	/*rev_string(s);*/
 	_puts(s);
 }
