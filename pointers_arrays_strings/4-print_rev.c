@@ -10,12 +10,6 @@ int _strlen(char *s)
 	}
 	return (i);
 }
-void _puts(char *str)
-{
-	rev_string(str);
-	write(STDOUT_FILENO, str, _strlen(str));
-	write(STDOUT_FILENO, "\n", 1);
-}
 void rev_string(char *str)
 {
 	int length = _strlen(str);
@@ -28,6 +22,12 @@ void rev_string(char *str)
 		str[i] = str[j];
 		str[j] = c;
 	}
+}
+void _puts(char *str)
+{
+	rev_string(str);
+	write(STDOUT_FILENO, str, _strlen(str));
+	write(STDOUT_FILENO, "\n", 1);
 }
 void print_rev(char *s)
 {
