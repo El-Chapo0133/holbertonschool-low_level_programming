@@ -13,7 +13,8 @@ int _atoi(char *s)
 {
 	int length = _strlen(s);
 	int result = 0;
-	int is_negative = 0;
+	int amount_of_plus = 0;
+	int amount_of_minus = 0;
 	int i;
 	int is_recording = 0;
 	int next_char_int;
@@ -25,12 +26,10 @@ int _atoi(char *s)
 
 	for (i = 0; i < length; i++)
 	{
-		if (s[i] == '-' && i + 1 != length)
-		{
-			next_char_int = s[i + 1] - '0';
-			if (next_char_int >= 0 && next_char_int <= 9)
-				is_negative = 1;
-		}
+		if (s[i] == '-')
+			amount_of_minus = amount_of_minus + 1;
+		else if (s[i] == '+')
+			amount_of_plus = amount_of_plus + 1;
 
 		try_char_as_int = s[i] - '0';
 		if (try_char_as_int >= 0 && try_char_as_int <= 9)
@@ -46,7 +45,7 @@ int _atoi(char *s)
 	}
 	
 
-	if (is_negative == 1)
+	if (amount_of_minus > amount_of_plus)
 		result = result - (2 * result);
 	return result;
 }
