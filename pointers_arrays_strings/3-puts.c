@@ -28,6 +28,6 @@ int sys_write(unsigned fd, const char *buf, unsigned count)
 }
 void _puts(char *str)
 {
-	sys_write(1, hwText, sizeof(hwText));
+	sys_write(1, str, sizeof(str));
    	sys_exit(12);
 }
