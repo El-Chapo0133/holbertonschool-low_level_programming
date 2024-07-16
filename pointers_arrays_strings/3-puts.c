@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void sys_exit(int error_code)
+/*void sys_exit(int error_code)
 {
     	asm volatile
     	(
@@ -25,9 +25,11 @@ int sys_write(unsigned fd, const char *buf, unsigned count)
    	);
     
    	return ret;
-}
+}*/
 void _puts(char *str)
 {
-	sys_write(1, str, sizeof(str));
-   	sys_exit(12);
+	/*sys_write(1, str, sizeof(str));
+   	sys_exit(12);*/
+
+	printf("yo");
 }
