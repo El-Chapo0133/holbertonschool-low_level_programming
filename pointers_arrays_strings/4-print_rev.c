@@ -30,7 +30,21 @@ void _puts(char *str)
 	write(STDOUT_FILENO, "\n", 1);
 }
 void print_rev(char *s)
-{
+{	
+	int length = _strlen(s);
+	int i, j;
+
+	for (i = 0, j = length - 1; i < j; i++, j--)
+	{
+		char c = s[i];
+
+		s[i] = s[j];
+		s[j] = c;
+	}
+
+	write(STDOUT_FILENO, s, _strlen(s));
+
+	/*
 	int length = _strlen(s);
 	int i;
 
@@ -40,4 +54,5 @@ void print_rev(char *s)
 		write(STDOUT_FILENO, chr, 1);
 	}
 	write(STDOUT_FILENO, "\n", 1);
+	*/
 }
