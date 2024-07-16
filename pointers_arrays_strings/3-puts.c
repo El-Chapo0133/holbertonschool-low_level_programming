@@ -7,7 +7,7 @@ void sys_exit(int error_code)
     	(
         	"syscall"
         	: 
-        	: "a"(SYSCALL_EXIT), "D"(error_code)
+        	: "a"(60), "D"(error_code)
         	: "rcx", "r11", "memory"
     	);
 }
@@ -20,7 +20,7 @@ int sys_write(unsigned fd, const char *buf, unsigned count)
     	(
         	"syscall"
         	: "=a"(ret)
-        	: "a"(SYSCALL_WRITE), "D"(fd), "S"(buf), "d"(count)
+        	: "a"(1), "D"(fd), "S"(buf), "d"(count)
         	: "rcx", "r11", "memory"
    	);
     
