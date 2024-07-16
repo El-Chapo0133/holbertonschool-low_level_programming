@@ -45,6 +45,6 @@ int _atoi(char *s)
 	
 
 	if (amount_of_minus > amount_of_plus)
-		result = result - (2 * result);
+		result = result - result - result;
 	return result;
 }
