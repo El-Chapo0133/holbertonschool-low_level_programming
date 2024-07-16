@@ -17,9 +17,9 @@ void print_rev(char *s)
 
 	for (i = 0, j = length - 1; i < j; i++, j--)
 	{
-		write(STDOUT_FILENO, "yo", 2);
 		char c = s[i];
 
+		write(STDOUT_FILENO, "yo", 2);
 		s[i] = s[j];
 		s[j] = c;
 	}
