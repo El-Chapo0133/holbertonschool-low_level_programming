@@ -1,8 +1,15 @@
 #include <stdio.h>
 #include "lists.h"
+/**
+ * This is an initial short description
+ */
+
 
 /**
  * This is a comment
+ * @h - head
+ *
+ * Returns - count
  */
 size_t print_dlistint(const dlistint_t *h)
 {
