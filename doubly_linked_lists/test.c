@@ -16,11 +16,11 @@ void push(struct Node** head, int new_data) {
 	Node *new_node = (struct Node*)malloc(sizeof(struct Node));
 
 	new_node->data = new_data;
-	new_node->next = (*head);
-	new_node->prev = NULL;
+	new_node->prev = (*head);
+	new_node->next = NULL;
 
 	if ((*head) != NULL)
-		(*head)->prev = new_node;
+		(*head)->next = new_node;
 
 	/* Change the pointer to point the new head, which is new_node */
 	(*head) = new_node;
