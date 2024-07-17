@@ -1,9 +1,5 @@
 #include <stdio.h>
 #include "lists.h"
-/**
- * This is an initial short description
- */
-
 
 /**
  * print_dlistint - This is a comment
