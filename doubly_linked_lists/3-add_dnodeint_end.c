@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-void move_head_to_end(struct dlistint_t **head)
+void move_head_to_end(dlistint_t **head)
 {
 	while ((*head)->prev != NULL)
 		(*head) = (*head)->prev;
