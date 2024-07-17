@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int new_data) {
-	dlistint_t *new_node = (struct dlistint_t*)malloc(sizeof(struct dlistint_s));
+	dlistint_t *new_node = (struct dlistint_s*)malloc(sizeof(struct dlistint_s));
 	
 	if (new_node == NULL) {
 		dprintf(2, "Error, can't malloc\n");
