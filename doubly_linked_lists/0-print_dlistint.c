@@ -3,7 +3,7 @@
 
 /**
  * print_dlistint - This is a comment
- * @h - head
+ * @h: head
  *
  * Return: count
  */
