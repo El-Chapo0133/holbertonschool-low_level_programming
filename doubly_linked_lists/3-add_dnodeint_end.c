@@ -27,6 +27,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int new_data)
 		(*head)->next = new_node;
 
 	/* Change the pointer to point the new head, which is new_node */
-	(*head) = new_node;
+	/*(*head) = new_node;*/
 	return (new_node);
 }
