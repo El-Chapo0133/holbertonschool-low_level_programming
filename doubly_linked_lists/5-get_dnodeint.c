@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 
-/**
+/*
  * get_dnodeint_at_index - This is a comment
  * @head: head
  * @index: index
@@ -11,7 +11,7 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; head->prev != NULL; i++)
 	{
