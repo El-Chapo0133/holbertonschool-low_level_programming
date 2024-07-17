@@ -17,7 +17,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int new_data)
 		dprintf(2, "Error, can't malloc\n");
 		return (NULL);
 	}
-	move_head_to_end(&head);
+	move_head_to_end(head);
 
 	new_node->n = new_data;
 	new_node->prev = (*head);
