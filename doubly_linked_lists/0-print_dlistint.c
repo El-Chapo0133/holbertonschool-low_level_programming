@@ -11,12 +11,11 @@ typedef struct dlistint_s
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t count = 0;
-	
-	dlistint_t current = h;
-	while (current->next)
+	while (h != NULL)
 	{
-		printf("%d", current->n);
-		current = current->next;
+		printf("%d\n", h->n);
+		h = h->next;
+		count = count + 1;
 	}
 
 	return count;
