@@ -5,8 +5,8 @@
 
 void move_head_to_end(dlistint_t **head)
 {
-	while ((*head)->prev != NULL)
-		(*head) = (*head)->prev;
+	while ((*head)->next != NULL)
+		(*head) = (*head)->next;
 }
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int new_data)
 {
