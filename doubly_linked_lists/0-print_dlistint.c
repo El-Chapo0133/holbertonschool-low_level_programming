@@ -6,10 +6,10 @@
 
 
 /**
- * This is a comment
+ * print_dlistint - This is a comment
  * @h - head
  *
- * Returns - count
+ * Return: count
  */
 size_t print_dlistint(const dlistint_t *h)
 {
