@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * sum_dlistint - This is a comment
+ * @head: head
+ *
+ * Return: sum
+ */
 int sum_dlistint(dlistint_t *head)
 {
 	int result = 0;
