@@ -60,6 +60,8 @@ int main() {
 	push(&head, 4);
 	push(&head, 5);
 
+	head->prev->data = 10;
+
 	reset_head_to_start(&head);
 	/*value = get_node_at_index(head, 2);
 	printf("%d\n", value->data);*/
