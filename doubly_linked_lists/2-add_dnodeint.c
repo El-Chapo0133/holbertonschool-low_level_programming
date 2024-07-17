@@ -2,6 +2,13 @@
 #include "lists.h"
 #include <stdlib.h>
 
+/**
+ * add_dnodeint - This is a comment
+ * @head: head
+ * @new_data: data
+ *
+ * Return: new node
+ */
 dlistint_t *add_dnodeint(dlistint_t **head, const int new_data)
 {
 	dlistint_t *new_node = (struct dlistint_s *)malloc(sizeof(struct dlistint_s));
