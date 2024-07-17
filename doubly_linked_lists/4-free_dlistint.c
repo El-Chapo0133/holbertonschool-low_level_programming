@@ -3,6 +3,12 @@
 #include "lists.h"
 
 
+/**
+ * free_dlistint - This is a comment
+ * @head: head
+ *
+ * Return: nothing
+ */
 void free_dlistint(dlistint_t *head)
 {
 	while (head != NULL)
