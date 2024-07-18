@@ -22,7 +22,7 @@ int _strlen(char *s)
 /**
  * puts_half - This is half of a description
  * @str: First argument
- * 
+ *
  * Return: as you can see, void
  */
 void puts_half(char *str)
