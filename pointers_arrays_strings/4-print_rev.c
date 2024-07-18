@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <unistd.h>
+/* This is a short description */
 
+/**
+ * _strlen - This is a function description for people who can't read
+ * @s: First parameter
+ *
+ * Return: As you can read, it returns void
+ */
 int _strlen(char *s)
 {
 	int i;
@@ -10,6 +17,12 @@ int _strlen(char *s)
 	}
 	return (i);
 }
+/**
+ * print_rev - Description
+ * @s - First parameter
+ *
+ * return: void
+ */
 void print_rev(char *s)
 {
 	int length = _strlen(s);
