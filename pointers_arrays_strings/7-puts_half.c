@@ -28,7 +28,7 @@ void puts_half(char *str)
 
 	for (i = 0; i < length; i = i + 2)
 	{
-		write(STDOUT_FILENO, c, 1);
+		write(STDOUT_FILENO, str[i], 1);
 	}
 	write(STDOUT_FILENO, "\n", 1);
 }
