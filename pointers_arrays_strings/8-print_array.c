@@ -9,7 +9,6 @@
  *
  * Return: As you can read, it returns void
  */
-
 void print_array(int *a, int n)
 {
 	int i;
