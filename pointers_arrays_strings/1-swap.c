@@ -3,7 +3,8 @@
 
 /**
  * swap_int - This is a function description for people who can't read
- * @n: First parameter
+ * @a: First parameter
+ * @b: Second parameter
  *
  * Return: As you can read, it returns void
  */
