@@ -20,12 +20,17 @@ int _strlen(char *s)
 }
 
 /**
+ * puts_half - This is half of a description
+ * @str: First argument
+ * 
+ * Return: as you can see, void
  */
 void puts_half(char *str)
 {
 	int i;
 	int length = _strlen(str);
 	int start_i;
+
 	if (length % 2 == 0)
 		start_i = length / 2;
 	else
