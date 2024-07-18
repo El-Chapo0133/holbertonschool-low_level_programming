@@ -25,8 +25,13 @@ void puts_half(char *str)
 {
 	int i;
 	int length = _strlen(str);
+	int start_i;
+	if (length % 2 == 0)
+		start_i = length / 2;
+	else
+		start_i = length / 2 - 1;
 
-	for (i = (length - 1) / 2; i < length; i++)
+	for (i = start_i; i < length; i++)
 	{
 		char c[1];
 
