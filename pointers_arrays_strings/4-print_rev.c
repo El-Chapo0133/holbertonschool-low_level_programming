@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 /**
  * print_rev - Description
- * @s - First parameter
+ * @s: First parameter
  *
  * return: void
  */
