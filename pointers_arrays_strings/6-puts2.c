@@ -18,7 +18,7 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * puts - This is a function description for people who can't read
+ * puts2 - This is a function description for people who can't read
  * @str: First parameter
  *
  * Return: As you can read, it returns void
