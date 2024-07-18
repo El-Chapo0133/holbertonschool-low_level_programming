@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-/**
- * This is a short description
- */
+/* This is a short description */
 
 /**
  * This is a function description for people who can't read
