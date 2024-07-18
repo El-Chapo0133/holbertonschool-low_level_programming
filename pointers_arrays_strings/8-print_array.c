@@ -1,5 +1,14 @@
 #include <stdio.h>
 #include <unistd.h>
+/* This is a short description */
+
+/**
+ * print_array - This is a function description for people who can't read
+ * @a: First parameter
+ * @n: Second parameter
+ *
+ * Return: As you can read, it returns void
+ */
 
 void print_array(int *a, int n)
 {
@@ -11,6 +20,5 @@ void print_array(int *a, int n)
 		if (i != n - 1)
 			printf(", ");
 	}
-	/*write(STDOUT_FILENO, "\n", 1); it doesn't work lol, i mean it does, but it doesn't validate it*/
 	printf("\n");
 }
